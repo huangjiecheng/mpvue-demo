@@ -45,7 +45,6 @@
         this.current = current
       },
       clickCard (item) {
-        //志强，这边要把item对象传到那个页面
         this.$router.push({path: '/pages/applicationSystem/systemForm/main'})
       }
 
