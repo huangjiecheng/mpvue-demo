@@ -3,7 +3,8 @@
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main",
-    "pages/applicationSystem/main"
+    "pages/applicationSystem/main",
+    "pages/applicationSystem/systemForm/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
