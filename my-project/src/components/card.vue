@@ -23,10 +23,7 @@
     },
     methods: {
       clickCard (item) {
-        mpvue.navigateTo({url: '../pages/applicationSystem/systemForm/main'})
-        // this.$router.push({
-        //   path: '../pages/applicationSystem/systemForm/main'
-        // })
+        this.$emit('clickCard', item)
       }
     }
   }

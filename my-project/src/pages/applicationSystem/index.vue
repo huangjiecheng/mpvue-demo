@@ -1,6 +1,6 @@
 <template>
   <div>
-    <my-component-card v-bind:current="current" v-bind:dataList="draftList" ></my-component-card>
+    <my-component-card v-bind:current="current" v-bind:dataList="draftList" @clickCard="clickCard"></my-component-card>
     <i-tab-bar :current="current" :fixed=true @change="handleChange">
       <i-tab-bar-item key="brush" icon="brush" current-icon="brush_fill" title="草稿"></i-tab-bar-item>
       <i-tab-bar-item key="task" icon="task" current-icon="task_fill" title="待审核"></i-tab-bar-item>
@@ -43,6 +43,10 @@
       handleChange (el) {
         let current = el.mp.detail.key
         this.current = current
+      },
+      clickCard (item) {
+        //志强，这边要把item对象传到那个页面
+        this.$router.push({path: '/pages/applicationSystem/systemForm/main'})
       }
 
     }
