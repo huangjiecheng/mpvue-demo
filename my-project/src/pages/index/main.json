@@ -1,8 +1,0 @@
-{
-  "usingComponents": {
-    "i-button": "../../iView/button",
-    "i-tab-bar": "../../iView/tab-bar/index",
-    "i-tab-bar-item": "../../iView/tab-bar-item/index"
-  }
-}
-
